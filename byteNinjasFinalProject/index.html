@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Electronic Store</title>
+
+  <!--Search-->
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <img src="images/Icon/menu.svg" alt="menu">
+          </div>
+
+          <div class="nav__logo">
+            <a href="/" class="scroll-link">
+              ELECTRONIC SHOP
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category"> ELECTRONIC SHOP</span>
+              <a href="#" class="close__toggle">
+                <img src="images/Icon/cancel.svg" alt="cancel">
+              </a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link scroll-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#products" class="nav__link scroll-link">Category</a>
+              </li>
+              <li class="nav__item">
+                <a href="#news" class="nav__link scroll-link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__icons">
+            <a class="icon__item">
+              <img src="images/Icon/user.svg" alt="user">
+            </a>
+
+            <a class="icon__item" onclick="showSearch()">
+              <img src="images/Icon/search.svg" alt="search">
+            </a>
+
+            <a class="icon__item">
+              <img src="images/Icon/cart.svg" onclick="moveToCartPage()" alt="cart">
+              <span id="cart__total">0</span>
+            </a>
+            <a href="login.html"><i class="fas fa-sign-in-alt me-2 icon__item "></i>
+              <img src="images/Icon/login.svg" alt="login" style="width: 25px; height: 25px">
+            </a>
+            
+            <a class="icon__item">
+              <img src="images/Icon/logout.svg" onclick="logout()" alt="Logout" style="width: 25px; height: 25px">
+            </a>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <!--Search UI-->
+
+    <div id="searchDIV" class="searchContainer" style="display: none;" >
+      <form>
+        <div>
+          <input type="input" class="searchInput" id="txt-search" placeholder="Type your search character">
+          <button class="cancelBtn" ><img src="images/Icon/cancel.svg" style="width: inherit; height: inherit;" onclick="closeSearch()" alt="cancel"></button>
+        </div>
+      </form>
+      <div id="filter-records"></div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span class="">All new IPhone 13 Pro </span>
+                  <h1 class="">Oh. So. Pro.</h1>
+                  <p>with easy finance options.</p>
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <div class="hero__img-container">
+                    <img class="banner_01" src="./images/banner1.png" alt="banner1" />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span>All new IPhone 13</span>
+                  <h1>Blast from the past</h1>
+                  <p>Six exciting colors to choose from</p>
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <img class="banner_02" src="./images/banner2.png" alt="banner2" />
+                </div>
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span>All new IPhone 13 Pro Max</span>
+                  <h1>Go Max.</h1>
+                  <p>Larger. Stronger. Better</p>
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <img class="banner_02" src="./images/banner3.png" alt="banner3" />
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="images/Icon/left.svg" alt="left">
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="images/Icon/right.svg" alt="right">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main -->
+  <main id="main">
+    <div class="container">
+
+      <!-- Collection -->
+      <section id="collection" class="section collection">
+        <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
+
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_02" src="./images/collection_02.png" alt="headphone">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Exciting offers on</span>
+                <h1>HEADPHONES</h1>
+                <a href="#category" onclick="HeadphoneFilter()">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_01" src="./images/collection_01.png" alt="">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Exciting offers on</span>
+                <h1>SMARTPHONES</h1>
+                <a href="#category" onclick="MobileFilter()">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="collection" class="section collection">
+        <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
+
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_02" src="./images/products/laptop/laptop5.png" alt="laptop">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Exciting offers on</span>
+                <h1>LAPTOPS</h1>
+                <a href="#category" onclick="LaptopFilter()">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection__box">
+            <div class="img__container">
+              <img class="collection_01" src="./images/television.png" alt="television">
+            </div>
+            <div class="collection__content">
+              <div class="collection__data">
+                <span>Exciting offers on</span>
+                <h1>TELEVISIONS</h1>
+                <a href="#category" onclick="TelevisionFilter()">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Latest Products -->
+
+      <section class="section latest__products" id="latest">
+        <div class="title__container">
+          <div class="section__title active" data-id="Latest Products">
+            <span class="dot"></span>
+            <h1 class="primary__title">Latest Products</h1>
+          </div>
+        </div>
+
+
+        <div class="latestProduct__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="latestProduct__center" style="display: grid; grid-template-columns: auto auto auto; padding: 10px;"></div>
+        </div>
+
+      </section>
+
+      <!-- Categoties -->
+
+      <section class="category__section section" id="products">
+        <div class="glide" id="glide6">
+          <div class="glide__track" data-glide-el="track">
+            <ul id="categoriesHeader" class="glide__slides title__container__center tabs">
+            </ul>
+          </div>
+    
+          <div class="glide__arrows" data-glide-el="controls">
+            <button id="glide__arrow__left" class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <img src="images/Icon/left.svg" alt="left">
+            </button>
+            <button id="glide__arrow__right" class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <img src="images/Icon/right.svg" alt="right">
+            </button>
+          </div>
+    
+        </div>
+        <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="category__center"></div>
+        </div>
+      </section>
+
+      <!-- <section class="category__section section" id="category">
+
+        <div class="tab__list">
+          <div class="title__container tabs">
+
+            <div class="section__titles category__titles ">
+              <div class="section__title filter-btn active" data-id="all">
+                <img class="cateIcon" src="images/Icon/all.svg" alt="all">
+                <h1 class="primary__title">All</h1>
+              </div>
+            </div>
+
+            <div class="section__titles category__titles ">
+              <div class="section__title filter-btn active" data-id="Smart Phones">
+                <img class="cateIcon" src="images/Icon/smartphone.svg" alt="samrtphones">
+                <h1 class="primary__title">MOBILE</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Laptops">
+                <img class="cateIcon" src="images/Icon/laptop.svg" alt="laptop">
+                <h1 class="primary__title">LAPTOPS</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Printers">
+                <img class="cateIcon" src="images/Icon/printer.svg" alt="printer">
+                <h1 class="primary__title">PRINTERS</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Televisions">
+                <img class="cateIcon" src="images/Icon/television.svg" alt="televisions">
+                <h1 class="primary__title">TELEVISIONS</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Headphones">
+                <img class="cateIcon" src="images/Icon/headphones1.svg" alt="headphones">
+                <h1 class="primary__title">HEADPHONES</h1>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="category__center"></div>
+        </div>
+
+    </div> -->
+    </section>
+
+    <!-- Facility Section -->
+
+    <section class="facility__section section" id="facility">
+
+      <div class="container">
+
+        <div class="facility__contianer" data-aos="fade-up" data-aos-duration="1200">
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <img src="images/Icon/plane.svg" alt="plane">
+            </div>
+            <p>FREE SHIPPING WORLD WIDE</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <img src="images/Icon/money.svg" alt="money">
+            </div>
+            <p>100% MONEY BACK GUARANTEE</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <img src="images/Icon/card.svg" alt="card">
+            </div>
+            <p>MANY PAYMENT GATWAYS</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <img src="images/Icon/headphones.svg" alt="headphones">
+            </div>
+            <p>24/7 ONLINE SUPPORT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Testimonial Section -->
+    <section class="section testimonial" id="testimonial">
+      <div class="testimonial__container">
+        <div class="glide" id="glide_4">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="testimonial__box">
+                  <div class="client__image">
+                    <img src="./images/profile1.jpg" alt="profile">
+                  </div>
+                  <p>
+                    You guys are amazing! You created a unique business 
+                    and work really hard. You take excellent care of
+                     your clients and deliver outstanding customer 
+                     service. 
+                  </p>
+                  <div class="client__info">
+                    <h3>Micheal Parker</h3>
+                    <span>Founder at BuyFromUs.</span>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="testimonial__box">
+                  <div class="client__image">
+                    <img src="./images/profile2.jpg" alt="profile">
+                  </div>
+                  <p>
+                    You made shopping online easy, safe and fast.
+                    thanks to Electronic store . keep up.
+                  </p>
+                  <div class="client__info">
+                    <h3>Michelle Parker</h3>
+                    <span>Founder at HomeStuff</span>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="testimonial__box">
+                  <div class="client__image">
+                    <img src="./images/profile3.jpg" alt="profile">
+                  </div>
+                  <p>
+                    Excellent service all the way around from start to finish.
+                    Keep up the great work.
+                  </p>
+                  <div class="client__info">
+                    <h3>Jonas Doe</h3>
+                    <span>Founder at <Rebel class="Inc"></Rebel></span>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Tech Update -->
+    <section class="section news" id="news">
+      <div class="container">
+        <div class="title__container">
+          <div class="section__titles">
+            <div class="section__title active">
+              <span class="dot"></span>
+              <h1 class="primary__title">TECH UPDATES</h1>
+            </div>
+          </div>
+        </div>
+        <div class="news__container">
+          <div class="glide" id="glide_5">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="new__card">
+                    <div class="card__header">
+                      <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/3DC7/production/_121051851_magicleapgettyimages-1145735518.jpg" alt="">
+                    </div>
+                    <div class="card__footer">
+                      <h3>Magic Leap reveals new AR headset and fresh funding</h3>
+                      <span>By BBC News</span>
+                      <p>Augmented reality (AR) firm Magic Leap has revealed the second version of its headset, alongside $500m in new investment.
+                        Unlike virtual reality (VR), the AR Magic Leap headsets project digital 3D objects on top of the real world.
+                        The new headset is intended primarily for business use and has, the firm says, a wider field of view.
+                        Magic Leap has faced criticism for the time it has taken to develop working prototypes and products.</p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="new__card">
+                    <div class="card__header">
+                      <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/AA66/production/_121022634_googlegettyimages-1234869764.jpg" alt="">
+                    </div>
+                    <div class="card__footer">
+                      <h3>Styling White Shirts After A Cool Day</h3>
+                      <span>By BBC News</span>
+                      <p>Google is giving free physical USB security keys to 10,000 users at high risk of being hacked - such as politicians and human rights activists.
+                        The USB keys provide two-factor authentication - an additional layer of security beyond a password.
+                        Google says it wants to encourage people to join its "advanced protection programme" for high-profile users.
+                        It follows news that the firm sent thousands of warnings to Gmail users who were targeted by hackers.</p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="new__card">
+                    <div class="card__header">
+                      <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A9/production/_121016764_hi071109828.jpg" alt="">
+                    </div>
+                    <div class="card__footer">
+                      <h3>Silenced no more: A new era of tech whistleblowing?</h3>
+                      <span>By BBC News</span>
+                      <p>
+                        Last week's testimony from Facebook whistleblower Frances Haugen was devastating.
+                        The documents she took from the company were carefully and methodically explained - a window into the inner workings of Facebook. It was a stunning moment of theatre - her testimony reverberating around the world.
+                        But last week could be significant for the future of whistleblowing in Silicon Valley for another reason.
+                        On Thursday night Gavin Newsom, California's governor,
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="new__card">
+                    <div class="card__header">
+                      <img src="https://i.gadgets360cdn.com/large/elon_musk_blackjacket_reuters_1624514420405.jpg?downsize=950:*" alt="">
+                    </div>
+                    <div class="card__footer">
+                      <h3>Elon Musk Says He's Dying to Make Supersonic Electric Jets Using VTOL Technology</h3>
+                      <span>By gadgets360cdn</span>
+                      <p>
+                        After making electric cars and trucks and transforming space exploration, 
+                        billionaire tycoon Elon Musk appears to have set his eyes on vertical lift electric planes. 
+                        He said he is “dying” to make electric supersonic jets that would use vertical take-off and landing (VTOL) 
+                        technology. With Musk, known for taking unconventional decisions that initially seem too outlandish,
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="new__card">
+                    <div class="card__header">
+                      <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F615ee6a9914f851229200f18%2FIn-this-photo-illustration-a-Windows-11-logo-is-seen-on-a---%2F960x0.jpg%3Ffit%3Dscale" alt="">
+                    </div>
+                    <div class="card__footer">
+                      <h3>Microsoft Officially Launches Windows 11—And Other Small Business Tech News This Week</h3>
+                      <span>By Forbes</span>
+                      <p>
+                        This past week, Microsoft launched Windows 11. 
+                        The new release introduces several new capabilities such as the software’s appearance,
+                         allowing users to run and download Android apps on their Windows PC, 
+                         improvements and updates to Teams, and more. However, not every new feature is immediately available. 
+                         The roll out will continue through the middle of next year, 
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </section>
+
+  </main>
+
+  <!-- End Main -->
+
+  <!-- NewsLetter -->
+      <section class="section newsletter" id="contact">
+        <div class="container">
+          <div class="newsletter__content">
+            <div class="newsletter__data">
+              <h3>SUBSCRIBE OUR NEWSLETTER TODAY !</h3>
+            </div>
+            <form action="#">
+              <input type="email" placeholder="Enter your email address" class="newsletter__email">
+              <a class="newsletter__link" href="#">subscribe</a>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3  id="contact" >CONTACT US</h3>
+          <div>
+            <span>
+              <img src="images/Icon/location.svg" alt="location">
+            </span>
+            400-265 Yorkland Blvd,Toronto, ON M2J 1S5
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/email.svg" alt="email">
+            </span>
+            c0797236@mylambton.ca
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/phone.svg" alt="phone">
+            </span>
+            123-4567-8910
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/paperplane.svg" alt="paperplane">
+            </span>
+            Ontario, Canada 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- PopUp -->
+  <div class="popup hide__popup">
+    <div class="popup__content">
+      <div class="popup__close">
+        <img src="images/Icon/cancel.svg">
+      </div>
+      <div class="popup__left">
+        <div class="popup-img__container">
+          <img class="popup__img" src="images/popup.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup__right">
+        <div class="right__content">
+          <h1>Get Discount <span>10%</span> Off</h1>
+          <p>Sign up to our newsletter and save 10% for you next purchase.</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup__form">
+            <a href="#">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Go To -->
+
+  <a href="#header" class="goto-top scroll-link">
+    <img src="images/Icon/Up.svg" alt="Up">
+  </a>
+
+
+  <!-- Glide Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="./js/products.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/adminCategories.js"></script>
+
+
+</body>
+
+</html>

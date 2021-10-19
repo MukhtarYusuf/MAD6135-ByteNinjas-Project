@@ -1,0 +1,292 @@
+{
+    "products": [{
+            "id": 1,
+            "title": "Apple iPhone 11",
+            "brand": "Apple",
+            "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And worry less with water resistance up to 2 meters for 30 minutes.",
+            "image": "./images/products/iphone/iphone1.jpeg",
+            "price": 760,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 2,
+            "title": "Apple iPhone 11 Pro",
+            "brand": "Apple",
+            "description": "Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the Super Retina XDR display—the brightest iPhone display yet. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. Get a new level of water resistance. All in the first iPhone powerful enough to be called Pro.",
+            "image": "./images/products/iphone/iphone2.jpeg",
+            "price": 1200,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 3,
+            "title": "Apple iPhone 11",
+            "brand": "Apple",
+            "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And worry less with water resistance up to 2 meters for 30 minutes.",
+            "image": "./images/products/iphone/iphone3.jpeg",
+            "price": 760,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 4,
+            "title": "Apple iPhone 11",
+            "brand": "Apple",
+            "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And worry less with water resistance up to 2 meters for 30 minutes.",
+            "image": "./images/products/iphone/iphone4.jpeg",
+            "price": 760,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 5,
+            "title": "Apple iPhone 11",
+            "brand": "Apple",
+            "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And worry less with water resistance up to 2 meters for 30 minutes.",
+            "image": "./images/products/iphone/iphone5.jpeg",
+            "price": 760,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 6,
+            "title": "Apple iPhone 11 pro max",
+            "brand": "Apple",
+            "description": "An unprecedented leap in battery life. And a mind blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro Max.",
+            "image": "./images/products/iphone/iphone6.jpeg",
+            "price": 1500,
+            "category": "Smart Phones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+
+        {
+            "id": 7,
+            "title": "Boat Rocker",
+            "brand": "Boat",
+            "description": "Boat Rocker is an over-ear wireless headset that has been ergonomically designed to meet the needs of music lovers. The headphones come equipped with the latest Bluetooth v5.0 for instant wireless connectivity. Its powerful 500mAh battery provides playtime of up to 20 hours for an extended audio bliss. Its 50mm dynamic drivers help supply immersive musical experience to the user with immersive sound. The user can utilize the headset via dual connectivity in the form of Bluetooth and AUX.",
+            "image": "./images/products/headphone/headphone1.jpeg",
+            "price": 265,
+            "category": "Headphones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+
+        {
+            "id": 8,
+            "title": "Marshall x21",
+            "brand": "Marshall",
+            "description": "The iconic headphones from Marshall with 80+ solid hours of wireless playtime, wireless charging and a new, improved ergonomic design. With more than three full days of power, you can stop worrying about your headphones dying on you when you need them. Custom-tuned dynamic drivers deliver roaring bass, smooth mids and brilliant treble for a rich, unrivalled sound that you’ll never want to turn off.",
+            "image": "./images/products/headphone/headphone2.jpeg",
+            "price": 700,
+            "category": "Headphones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+
+        {
+            "id": 9,
+            "title": "Sony wx102",
+            "image": "./images/products/headphone/headphone3.jpeg",
+            "brand": "Sony",
+            "description": "Discover how the Sony wx102 headphones blend our most advanced noise cancelling with exceptional sound quality and a range of smart features for an unrivalled listening experience. Sony’s intelligent, industry-leading noise cancelling headphones with premium sound elevate your listening experience with the ability to personalize and control everything you hear. Dual-noise-sensor technology, featuring two microphones on each earcup, captures ambient noise and passes the data to the HD Noise-Cancelling Processor QN1. LDAC transmits approximately three times more data (at the maximum transfer rate of 990 kbps) than conventional BLUETOOTH® audio, allowing you to enjoy High-Resolution Audio content in exceptional quality, as close as possible to that of a dedicated wired connection.",
+            "price": 355,
+            "category": "Headphones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 10,
+            "title": "Boat nirvana",
+            "brand": "Boat",
+            "description": "Boat nirvana is an over-ear wireless headset that has been ergonomically designed to meet the needs of music lovers. The headphones come equipped with the latest Bluetooth v5.0 for instant wireless connectivity. Its powerful 500mAh battery provides playtime of up to 20 hours for an extended audio bliss. Its 50mm dynamic drivers help supply immersive musical experience to the user with immersive sound. The user can utilize the headset via dual connectivity in the form of Bluetooth and AUX.",
+            "image": "./images/products/headphone/headphone4.jpeg",
+            "price": 452,
+            "category": "Headphones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 11,
+            "title": "Boat sound",
+            "brand": "Boat",
+            "description": "Boat sound is an over-ear wireless headset that has been ergonomically designed to meet the needs of music lovers. The headphones come equipped with the latest Bluetooth v5.0 for instant wireless connectivity. Its powerful 500mAh battery provides playtime of up to 20 hours for an extended audio bliss. Its 50mm dynamic drivers help supply immersive musical experience to the user with immersive sound. The user can utilize the headset via dual connectivity in the form of Bluetooth and AUX.",
+            "image": "./images/products/headphone/headphone5.jpeg",
+            "price": 362,
+            "category": "Headphones",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 12,
+            "title": "Acer laptop1",
+            "brand": "Acer",
+            "description": "Take care of your everyday computing needs with the Acer’s combination of reliable tech and handy design features. includes Microsoft 365 Personal, a convenient 12 month subscription for 1 person. Microsoft 365 Personal includes premium productivity apps like Word, Excel, PowerPoint, Outlook, OneNote, and more. Services include 1 TB of cloud storage, Skype, as well as advanced security for all your devices. Activation is required post device purchase.",
+            "image": "./images/products/laptop/laptop1.png",
+            "price": 1500,
+            "category": "Laptops",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 13,
+            "title": "Acer laptop2",
+            "brand": "Acer",
+            "description": "Take care of your everyday computing needs with the Acer’s combination of reliable tech and handy design features. includes Microsoft 365 Personal, a convenient 12 month subscription for 1 person. Microsoft 365 Personal includes premium productivity apps like Word, Excel, PowerPoint, Outlook, OneNote, and more. Services include 1 TB of cloud storage, Skype, as well as advanced security for all your devices. Activation is required post device purchase.",
+            "image": "./images/products/laptop/laptop2.png",
+            "price": 1600,
+            "category": "Laptops",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 14,
+            "title": "Acer laptop3",
+            "brand": "Acer",
+            "description": "Take care of your everyday computing needs with the Acer’s combination of reliable tech and handy design features. includes Microsoft 365 Personal, a convenient 12 month subscription for 1 person. Microsoft 365 Personal includes premium productivity apps like Word, Excel, PowerPoint, Outlook, OneNote, and more. Services include 1 TB of cloud storage, Skype, as well as advanced security for all your devices. Activation is required post device purchase.",
+            "image": "./images/products/laptop/laptop3.png",
+            "price": 1700,
+            "category": "Laptops",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 15,
+            "title": "Acer laptop4",
+            "brand": "Acer",
+            "description": "Take care of your everyday computing needs with the Acer’s combination of reliable tech and handy design features. includes Microsoft 365 Personal, a convenient 12 month subscription for 1 person. Microsoft 365 Personal includes premium productivity apps like Word, Excel, PowerPoint, Outlook, OneNote, and more. Services include 1 TB of cloud storage, Skype, as well as advanced security for all your devices. Activation is required post device purchase.",
+            "image": "./images/products/laptop/laptop4.png",
+            "price": 1800,
+            "category": "Laptops",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 16,
+            "title": "Acer laptop5",
+            "brand": "Acer",
+            "description": "Take care of your everyday computing needs with the Acer’s combination of reliable tech and handy design features. includes Microsoft 365 Personal, a convenient 12 month subscription for 1 person. Microsoft 365 Personal includes premium productivity apps like Word, Excel, PowerPoint, Outlook, OneNote, and more. Services include 1 TB of cloud storage, Skype, as well as advanced security for all your devices. Activation is required post device purchase.",
+            "image": "./images/products/laptop/laptop5.png",
+            "price": 1900,
+            "category":"Laptops",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 17,
+            "title": "Canon printer",
+            "brand": "Canon",
+            "description": "Printing, scanning and faxing shouldn't require a huge printer to get the job done, and with the canon printer, you'll see how a compact office printer stands up to the bulkier printers. It is the right size which has the right features, like Wi-Fi®1, Auto 2-Sided printing, and an ADF for scanning, and faxing. The canon printer provides simple, productive office printing in a compact size.",
+            "image": "./images/products/printer/printer1.jpg",
+            "price": 700,
+            "category": "Printers",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 18,
+            "title": "HP printer",
+            "brand": "HP",
+            "description": "All the basics, now with easy-to-use features. Print, scan, and copy everyday documents, and get worry-free wireless. Get simple setup with HP Smart app. Choose HP+ when you set up your printer to activate exclusive benefits.",
+            "image": "./images/products/printer/printer2.jpg",
+            "price": 750,
+            "category": "Printers",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 19,
+            "title": "Epson printer",
+            "brand": "Epson",
+            "description": "Get high-speed printing and enhanced productivity for your small work team with the WorkForce Pro EC-4020 color multifunction printer. Powered by revolutionary PrecisionCore technology, the epson printer delivers print-quality prints with laser-sharp text. Featuring fast speeds, it quickly delivers professional-quality documents. Its 250-sheet paper capacity means you’ll replace paper less often. Plus, it features a 35-page Auto Document Feeder and auto 2-sided printing. Combining powerful performance with a compact design, it offers outstanding efficiency.",
+            "image": "./images/products/printer/printer3.jpg",
+            "price": 1200,
+            "category": "Printers",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 20,
+            "title": "Brother printer",
+            "brand": "Brother",
+            "description": "Brother Multifunction Printer - Monochrome - Plain Paper Print - Desktop - Copier/Printer/Scanner - 30 ppm Mono Print - 2400 x 600 dpi Print - 30 cpm Mono Copy LCD - 600 dpi Optical Scan - Automatic Duplex Print - 250 sheets Input - Ethernet - Wireless LAN - USB.",
+            "image": "./images/products/printer/printer4.jpg",
+            "price": 950,
+            "category": "Printers",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 21,
+            "title": "Brother printer",
+            "brand": "Brother",
+            "description": "Brother Multifunction Printer - Monochrome - Plain Paper Print - Desktop - Copier/Printer/Scanner - 30 ppm Mono Print - 2400 x 600 dpi Print - 30 cpm Mono Copy LCD - 600 dpi Optical Scan - Automatic Duplex Print - 250 sheets Input - Ethernet - Wireless LAN - USB.",
+            "image": "./images/products/printer/printer5.jpg",
+            "price": 990,
+            "category": "Printers",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 22,
+            "title": "Samsung 43 inch",
+            "brand": "Samsung",
+            "description": "The TV’s sleek, minimalistic style draws you into a pure cinematic experience – so you see the picture, not the TV. Control your TV and compatible devices with a single remote that recognizes your other devices as soon as you connect them. High-Dynamic Range allows you to see stunning detail in every scene, while Crystal Display delivers lifelike colour, optimal picture performance and immersive viewing. You’ll feel like you’re part of the film you’re watching.",
+            "image": "./images/products/television/tv1.jpg",
+            "price": 1500,
+            "category": "Televisions",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 23,
+            "title": "VISIO Smart tv",
+            "brand": "VISIO",
+            "description": "Upgrade your space with the VISIO Smart TV. VISIO TV brings you top streaming platforms like Netflix, Apple TV, Disney+, and more. Access to 500,000+ movies and TV episodes across thousands of free or paid channels plus innovative features make finding your favorite entertainment fast and simple. Combined with automatic software updates, your TV only gets better and better overtime.",
+            "image": "./images/products/television/tv2.jpg",
+            "price": 1300,
+            "category": "Televisions",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 24,
+            "title": "VIEW android tv",
+            "brand": "View",
+            "description": "The ultra-intuitive Smart TV interface powered by Android gives you a world of content at your fingertips, making it incredibly easy to nativigate through web-connected apps like YouTube, Netflix and more. Built-in Wifi and a dedicated Ethernet port let you get online with ease, while 3 HDMI ports let you connect multiple HD devices.",
+            "image": "./images/products/television/tv3.jpg",
+            "price": 1450,
+            "category": "Televisions",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 25,
+            "title": "Samsung 32 inch",
+            "brand": "Samsung",
+            "description": "The TV’s sleek, minimalistic style draws you into a pure cinematic experience – so you see the picture, not the TV. Control your TV and compatible devices with a single remote that recognizes your other devices as soon as you connect them. High-Dynamic Range allows you to see stunning detail in every scene, while Crystal Display delivers lifelike colour, optimal picture performance and immersive viewing. You’ll feel like you’re part of the film you’re watching.",
+            "image": "./images/products/television/tv4.jpg",
+            "price": 920,
+            "category": "Televisions",
+            "rating": 0,
+            "ratingCount": 0
+        },
+        {
+            "id": 26,
+            "title": "Samsung 32 smart tv",
+            "brand": "Samsung",
+            "description": "The TV’s sleek, minimalistic style draws you into a pure cinematic experience – so you see the picture, not the TV. Control your TV and compatible devices with a single remote that recognizes your other devices as soon as you connect them. High-Dynamic Range allows you to see stunning detail in every scene, while Crystal Display delivers lifelike colour, optimal picture performance and immersive viewing. You’ll feel like you’re part of the film you’re watching.",
+            "image": "./images/products/television/tv5.jpg",
+            "price": 1130,
+            "category": "Televisions",
+            "rating": 0,
+            "ratingCount": 0
+        }
+    ]
+}

@@ -1,0 +1,261 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--myregis strt -->
+
+        
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Electronic Store</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <img src="images/Icon/menu.svg" alt="menu">
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="/" class="scroll-link">
+                            ELECTRONIC STORE
+                        </a>
+                    </div>
+
+                    <div class="nav__menu">
+                        <div class="menu__top">
+                            <span class="nav__category">PHONE</span>
+                            <a href="#" class="close__toggle">
+                                <img src="images/Icon/cancel.svg" alt="cancel">
+                            </a>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Products</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+                        <a href="#" class="icon__item">
+                            <img src="images/Icon/user.svg" alt="user">
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <img src="images/Icon/search.svg" alt="search">
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <img src="images/Icon/cart.svg" alt="cart">
+                            <span id="cart__total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <div class="page__title-area">
+            <div class="container">
+                <div class="page__title-container">
+                    <ul class="page__titles">
+                        <li>
+                            <a href="/">
+                                <img src="images/Icon/home.svg" alt="home">
+                            </a>
+                        </li>
+                        <li class="page__title">Cart</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+
+
+
+    <div class="col-12">
+        <!-- Main Content -->
+        <div class="row">
+            <div class="col-12 mt-3 text-center text-uppercase">
+                <h2>Register</h2>
+            </div>
+        </div>
+
+        <main class="row" style="display: flex; justify-content: center">
+            <div class="col-lg-4 col-md-6 col-sm-8 mx-auto bg-white py-3 mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordConfirm">Confirm Password</label>
+                                <input type="password" id="passwordConfirm" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" id="agree" class="form-check-input" required>
+                                    <label for="agree" class="form-check-label ml-2">I agree to Terms and Conditions</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" onclick="registerUser()" class="btn btn-outline-dark">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- Main Content -->
+    </div>
+
+
+
+
+       
+        <!-- Facility Section -->
+        <section class="facility__section section" id="facility">
+
+            <div class="container">
+      
+              <div class="facility__contianer" data-aos="fade-up" data-aos-duration="1200">
+                <div class="facility__box">
+                  <div class="facility-img__container">
+                    <img src="images/Icon/plane.svg" alt="plane">
+                  </div>
+                  <p>FREE SHIPPING WORLD WIDE</p>
+                </div>
+      
+                <div class="facility__box">
+                  <div class="facility-img__container">
+                    <img src="images/Icon/money.svg" alt="money">
+                  </div>
+                  <p>100% MONEY BACK GUARANTEE</p>
+                </div>
+      
+                <div class="facility__box">
+                  <div class="facility-img__container">
+                    <img src="images/Icon/card.svg" alt="card">
+                  </div>
+                  <p>MANY PAYMENT GATWAYS</p>
+                </div>
+      
+                <div class="facility__box">
+                  <div class="facility-img__container">
+                    <img src="images/Icon/headphones.svg" alt="headphones">
+                  </div>
+                  <p>24/7 ONLINE SUPPORT</p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3  id="contact" >CONTACT US</h3>
+          <div>
+            <span>
+              <img src="images/Icon/location.svg" alt="location">
+            </span>
+            400-265 Yorkland Blvd,Toronto, ON M2J 1S5
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/email.svg" alt="email">
+            </span>
+            c0797236@mylambton.ca
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/phone.svg" alt="phone">
+            </span>
+            123-4567-8910
+          </div>
+          <div>
+            <span>
+              <img src="images/Icon/paperplane.svg" alt="paperplane">
+            </span>
+            Ontario, Canada 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+    <!-- Go To -->
+
+    <a href="#header" class="goto-top scroll-link">
+        <img src="images/Icon/Up.svg" alt="Up">
+    </a>
+
+    <!-- JQuery Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/products.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/Storage.js"></script>
+</body>
+
+</html>
